@@ -11,7 +11,6 @@ int main(void)
 	char j;
 	l = 'a';
 	j = 'A';
-
 	while (l <= 'z')
 	{
 		putchar(l);
