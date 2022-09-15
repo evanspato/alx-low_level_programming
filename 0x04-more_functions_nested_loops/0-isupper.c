@@ -4,13 +4,13 @@
 
 /**
 
-*_isupper - checks if a  character is uppercase or not
+ * _isupper - checks if alphabet character is uppercase
 
-*@c: character to be tested
+ * @c: function argument i.e input parameter
 
-*Return: 1 whether it is, 0 otherwise
+ * Return: equals to 1 if alphabet character is uppercase otherwise 0;
 
-*/
+ */
 
 
 
@@ -18,12 +18,20 @@ int _isupper(int c)
 
 {
 
-	if ((c >= 'A') && (c <= 'Z'))
+	if (c >= 'A' && c <= 'Z')
 
 	{
 
-		return (1);
+	return (1);
+
 	}
 
+	else
+
+	{
+
 	return (0);
+
+	}
+
 }
