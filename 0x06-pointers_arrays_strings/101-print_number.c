@@ -1,45 +1,69 @@
-#include <stdio.h>
+#include "main.h"
 
 
 
-int main(void)
+/**
+
+ * print_number - print an integer, without using long, arrays, or pointers
+
+ * @n: number to be printed
+
+ */
+
+
+
+void print_number(int n)
 
 {
 
-  int n;
+	unsigned int tens, digit, positive = n;
 
-  int a[5];
-
-  int *p;
+	double t_beg = 1;
 
 
 
-  a[2] = 1024;
+	if (n == 0)
 
-  p = &n;
+		_putchar('0');
 
-  /*
+	else
 
-   * write your line of code here...
+	{
 
-   * Remember:
+		if (n < 0)
 
-   * - you are not allowed to use a
+		{
 
-   * - you are not allowed to modify p
+			positive = n * -1;
 
-   * - only one statement
+			_putchar('-');
 
-   * - you are not allowed to code anything else than this line of code
+		}
 
-   */
 
-  *(p + 5) = 98;
 
-  /* ...so that this prints 98\n */
+		while (t_beg <= positive)
 
-  printf("a[2] = %d\n", a[2]);
+			t_beg *= 10;
 
-  return (0);
+		tens = t_beg / 10;
+
+
+
+		while (tens >= 1)
+
+		{
+
+			digit = positive / tens;
+
+			_putchar(digit + '0');
+
+			positive = (positive - (tens * digit));
+
+			tens /= 10;
+
+		}
+
+	}
 
 }
