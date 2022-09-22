@@ -1,15 +1,9 @@
 #include "main.h"
 
-
-
 /**
-
  * cap_string - capitalize first letter of each word
-
  * @s: string to manipulate
-
  * Return: string
-
  */
 
 
@@ -51,12 +45,9 @@ char *cap_string(char *s)
 			|| s[i - 1] == '\n'))
 
 			s[i] = s[i] - 'a' + 'A';
-
 		i++;
 
 	}
 
-
-
 	return (s);
-
+}
