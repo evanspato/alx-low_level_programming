@@ -4,13 +4,17 @@
 
 /**
 
- * _strcat - appends src to dest string
+ *_strcat - concatenates  the string pointed to by @src to
 
- * @dest: string that src will be appended on
+ * the end of the string pointed to by @dest
 
- * @src: string to append on dest
+ *@dest: String that will be appended
 
- * Return: address of dest
+ *@src: String to be concatenated upon
+
+ *
+
+ * Return: returns poiner to @dest
 
  */
 
@@ -20,25 +24,23 @@ char *_strcat(char *dest, char *src)
 
 {
 
-	int a, b;
+
+
+	int index = 0, dest_len = 0;
 
 
 
-	a = b = 0;
+	while (dest[index++])
 
-	while (*(dest + a))
+		dest_len++;
 
-		a++;
 
-	while ((*(dest + a) = *(src + b)))
 
-	{
+	for (index = 0; src[index]; index++)
 
-		a++;
+		dest[dest_len++] = src[index];
 
-		b++;
 
-	}
 
 	return (dest);
 
