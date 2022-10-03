@@ -41,13 +41,11 @@ bool is_num(char *argvv)
 
 /**
  * main - print sum if all arguments given are numbers
- * @argc: argument counter
- * @argv: arguments 
+ * @argc: argument counte
+ * @argv: arguments
  * Return: 0 on success, 1 if an argument wasn't a number
  */
-
-
-
+ 
 int main(int argc, char *argv[])
 
 {
@@ -89,7 +87,6 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 
 			return (1);
-
 		}
 
 		i++;
@@ -97,9 +94,5 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", sum);
-
-
-
 	return (0);
-
 }
