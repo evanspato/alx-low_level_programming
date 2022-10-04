@@ -55,12 +55,8 @@ char *_strdup(char *str)
 	{
 
 		*(duplicate_str + i) = *(str + i);
-
 		i++;
-
 	}
-
-
 
 	return (duplicate_str);
 
