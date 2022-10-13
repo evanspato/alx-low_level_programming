@@ -6,7 +6,6 @@
  * @array: input integer array.
  * @size: size of the array.
  * @action: pointer to the function. 
- *
  * Return: no return.
  */
 
