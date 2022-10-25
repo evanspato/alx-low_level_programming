@@ -1,21 +1,36 @@
-#ifndef LISTS_H
+#ifndef _LISTS_H
 
-#define LISTS_H
+#define _LISTS_H
 
 
 
-#include <stdlib.h>
+#include <stdio.h> /*printf*/
+
+#include <stdlib.h> /*malloc, free*/
+
+#include <stddef.h>
+
+#include <string.h> /*size_t*/
 
 
 
 /**
+
  * struct listint_s - singly linked list
+
  * @n: integer
- * @next: points to the next node 
+
+ * @next: points to the next node
+
  *
+
  * Description: singly linked list node structure
- * for project
+
+ *
+
  */
+
+
 
 typedef struct listint_s
 
@@ -25,7 +40,11 @@ typedef struct listint_s
 
 	struct listint_s *next;
 
+
+
 } listint_t;
+
+
 
 
 
@@ -59,5 +78,4 @@ size_t free_listint_safe(listint_t **h);
 
 listint_t *find_listint_loop(listint_t *head);
 
-
-
+#endif
